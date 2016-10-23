@@ -1,1 +1,1 @@
-.tabs .tab-item{display:inline-block;width:49%;border:1px solid black}.tabs .tab-item.active{font-family:'Avenir-Heavy'}
+.tabs .tab-item{display:inline-block;width:49%;border-bottom:1px solid white;text-align:center}.tabs .tab-item.active{font-family:'Avenir-Heavy'}

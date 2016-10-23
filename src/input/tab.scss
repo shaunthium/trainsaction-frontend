@@ -4,7 +4,8 @@
   .tab-item {
     display: inline-block;
     width: 49%;
-    border: 1px solid black;
+    border-bottom: 1px solid white;
+    text-align: center;
 
     &.active {
       font-family: 'Avenir-Heavy';

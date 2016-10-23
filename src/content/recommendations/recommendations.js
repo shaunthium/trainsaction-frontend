@@ -5,6 +5,7 @@ import pic_1 from './img/1.jpg';
 import pic_2 from './img/2.jpg';
 import pic_3 from './img/3.jpg';
 import pic_4 from './img/4.jpg';
+import shopping_cart from './img/shopping-cart.png';
 
 class Recommendations extends Component {
   constructor(props) {
@@ -63,7 +64,41 @@ class Recommendations extends Component {
             return (
               <div className='outer-container' key={index}>
                 <div className='inner-container'>
-                  <img src={this._getImgSrc(index)} alt={"image_"+index} width={45}/>
+                  <div style={{
+                    display: 'inline-block',
+                    width: '23%'
+                  }}>
+                    <div>
+                      <img
+                        src={this._getImgSrc(index)}
+                        alt={"image_"+index}
+                        style={{
+                          height: '6em',
+                          width: '100%'
+                        }}/>
+                    </div>
+                    <div style={{backgroundColor: 'grey'}}>${item.price}</div>
+                  </div>
+                  <div style={{
+                    display: 'inline-block',
+                    width: '50%',
+                    position: 'relative',
+                    bottom: '1em',
+                    marginLeft: '0.5em'
+                  }}>
+                    <p>{item.name}</p>
+                    <p style={{marginTop: '0.5em'}}>{item.desc}</p>
+                  </div>
+                  <div style={{display: 'inline-block', width: '15%'}}>
+                    <img
+                      style={{
+                        width: '100%',
+                        position: 'relative',
+                        bottom: '2em',
+                        left: '1em'
+                      }}
+                      src={shopping_cart} />
+                  </div>
                 </div>
               </div>
             );
