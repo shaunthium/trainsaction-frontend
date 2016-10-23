@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Tab from './input/tab';
+import ContentWrapper from './content/wrapper';
 
 class Wrapper extends Component {
   constructor(props) {
@@ -10,7 +11,6 @@ class Wrapper extends Component {
   }
 
   setActiveTab(tab) {
-    console.log('tab', tab);
     this.setState({activeTab: tab});
   }
 
@@ -29,6 +29,7 @@ class Wrapper extends Component {
             onClick={this.setActiveTab.bind(this, 1)}
             />
         </div>
+        <ContentWrapper tab={this.state.activeTab} />
       </div>
     );
   }
