@@ -5,4 +5,11 @@ body {
   font-family: 'Avenir-Light';
   letter-spacing: 0px;
   color: white;
+
+  .wrapper {
+    .logo-img {
+      width: auto;
+      height: 100%;
+    }
+  }
 }

@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Tab from './input/tab';
 import ContentWrapper from './content/wrapper';
 import './wrapper.css';
+import logo_train from './logo-train.jpg';
+import logo_words from './logo-words.jpg';
 
 class Wrapper extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeTab: 1
+      activeTab: 0
     };
   }
 
@@ -17,9 +19,17 @@ class Wrapper extends Component {
 
   render() {
     return (
-      <div>
-        <h5>trAInsactions</h5>
-        <div className='container'>
+      <div className='wrapper'>
+        <div
+          style={{
+            backgroundColor: '#6E6E6E',
+            height: '4em',
+            textAlign: 'center'
+          }}>
+          <img src={logo_train} className='logo-img'/>
+          <img src={logo_words} className='logo-img'/>
+        </div>
+        <div className='container' style={{paddingTop: '1em'}}>
           <div className='tabs'>
             <Tab
               text='Recommendations'
