@@ -1,7 +1,7 @@
 {
     "name": "money2020-frontend",
     "version": "0.1.0",
-    "homepage": "http://shaunthium.me/trainsaction",
+    "homepage": "http://shaunthium.me/trainsactions",
     "private": true,
     "devDependencies": {
         "react-scripts": "0.7.0"
