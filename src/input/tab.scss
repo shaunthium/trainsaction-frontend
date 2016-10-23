@@ -3,5 +3,11 @@
 .tabs {
   .tab-item {
     display: inline-block;
+    width: 49%;
+    border: 1px solid black;
+
+    &.active {
+      color: blue;
+    }
   }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './tab.css';
+import classNames from 'classnames';
 
 class Tab extends Component {
   constructor(props) {
@@ -7,8 +8,9 @@ class Tab extends Component {
   }
 
   render() {
+    let className = classNames('tab-item', {'active': this.props.active})
     return (
-      <div className='tab-item'>
+      <div className={className} onClick={this.props.onClick}>
         {this.props.text}
       </div>
     )
