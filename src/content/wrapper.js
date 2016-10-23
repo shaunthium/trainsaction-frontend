@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Recommendations from './recommendations';
-import Marketplace from './marketplace';
+import Recommendations from './recommendations/recommendations';
+import Marketplace from './marketplace/marketplace';
 
 class ContentWrapper extends Component {
   constructor(props) {
