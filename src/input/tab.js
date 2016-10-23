@@ -11,7 +11,7 @@ class Tab extends Component {
     let className = classNames('tab-item', {'active': this.props.active})
     return (
       <div className={className} onClick={this.props.onClick}>
-        {this.props.text}
+        {this.props.text.toLowerCase()}
       </div>
     )
   }
