@@ -1,0 +1,26 @@
+// Comment for SASS autocompile
+
+.marketplaces {
+  .outer-container {
+    padding: 1em;
+
+    .inner-container {
+      position: relative;
+      .marketplace {
+        // position: absolute;
+        display: inline-block;
+        border: 1px solid white;
+        width: 40%;
+        margin-left: 2em;
+        text-align: center;
+        height: 11em;
+        p {
+          margin: 0;
+        }
+        .marketplace-img {
+          width: 100%
+        }
+      }
+    }
+  }
+}

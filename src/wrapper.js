@@ -7,7 +7,7 @@ class Wrapper extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeTab: 0
+      activeTab: 1
     };
   }
 
