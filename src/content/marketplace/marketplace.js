@@ -5,7 +5,7 @@ import pic_1 from './img/1.jpg';
 import pic_2 from './img/2.jpg';
 import pic_3 from './img/3.jpg';
 import pic_4 from './img/4.jpg';
-// import pic_5 from './img/5.jpg';
+import pic_5 from './img/5.jpg';
 
 class Marketplace extends Component {
   constructor(props) {
@@ -53,7 +53,7 @@ class Marketplace extends Component {
       case 4:
         return pic_4;
       case 5:
-        // return pic_5;
+        return pic_5;
     }
   }
 

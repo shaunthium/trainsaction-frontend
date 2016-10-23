@@ -34,6 +34,7 @@ class Wrapper extends Component {
           </div>
           <ContentWrapper tab={this.state.activeTab} />
         </div>
+        <h3 style={{color: '#35a6e5', textAlign: "center"}}>Load More</h3>
       </div>
     );
   }
